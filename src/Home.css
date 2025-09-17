@@ -1,0 +1,36 @@
+.profile-img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: top center; /* shift focus down */
+  border: 3px solid #fff;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.btn-signing {
+    background-color: #a7a7a7;
+    color: black;
+    padding: 0.8rem 2rem;
+    border-radius: 50px;
+    border: none;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: background-color 0.2s ease;
+    cursor: pointer;
+    z-index: 999;
+
+}
+
+.btn-signing:hover {
+    background-color: white;
+}
+
+.spline-wrapper{
+    overflow: hidden; 
+    width: 50vw;
+}
+
+.spline-wrapper spline-viewer {
+  width: 100%;
+}
