@@ -7,13 +7,7 @@ import Certificates from './components/certificates/Certificate'
 const MainHome = () => {
   return (
     <div>
-      {/* <div className="background">
-        <img src={'./gradient.png'} className="image-gradient" alt="" />
-        <div className="layer-blur"></div>
-        <div className="layer-blur2"></div>
-      </div> */}
-
-            {/* Animated background */}
+      {/* Animated background */}
       <div className="background-animation">
         {[...Array(20)].map((_, i) => (
           <div

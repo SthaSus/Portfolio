@@ -1,34 +1,76 @@
+.profile-border {
+  position: relative;
+  display: inline-block;
+  padding: 4px;
+  /* thickness of border */
+  border-radius: 50%;
+  background: linear-gradient(to right,
+      #656565, #7f42a7, #6600c5, #5300a0, #757575, #656565);
+  background-size: 200%;
+  animation: animationGradient 2.5s linear infinite;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+}
+
 .profile-img {
   width: 180px;
   height: 180px;
   border-radius: 50%;
   object-fit: cover;
-  object-position: top center; /* shift focus down */
-  border: 3px solid #fff;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  object-position: top center;
+  /* keeps focus on face */
+  display: block;
+  border: 3px solid #000;
+  /* inner border, optional */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
 
-.btn-signing {
-    background-color: #a7a7a7;
-    color: black;
-    padding: 0.8rem 2rem;
-    border-radius: 50px;
-    border: none;
+
+.cv-button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+.download-cv-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  background: linear-gradient(45deg, #00ffff, #a855f7);
+  color: black;
+  padding: 16px 32px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-family: 'Courier New', monospace;
+  font-weight: 700;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  transition: transform 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 255, 255, 0.3);
+  border: none;
+  cursor: pointer;
+}
+
+.download-cv-button:hover {
+  transform: scale(1.1);
+}
+
+.download-cv-button:active {
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .download-cv-button {
     font-size: 1rem;
-    font-weight: 500;
-    transition: background-color 0.2s ease;
-    cursor: pointer;
-    z-index: 999;
-
+    padding: 14px 28px;
+  }
 }
 
-.btn-signing:hover {
-    background-color: white;
-}
 
-.spline-wrapper{
-    overflow: hidden; 
-    width: 50vw;
+.spline-wrapper {
+  overflow: hidden;
+  width: 50vw;
 }
 
 .spline-wrapper spline-viewer {
